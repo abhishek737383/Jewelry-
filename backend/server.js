@@ -18,7 +18,7 @@ connectDB();
 
 // ✅ FIXED CORS Configuration
 const allowedOrigins = [
-  'https://artplazza.netlify.app',
+  'https://jewellers.netlify.app/',
   'http://localhost:3000',
   // Optional: add more if needed
   process.env.FRONTEND_URL 
@@ -143,7 +143,7 @@ const server = app.listen(PORT, () => {
   console.log(`🌐 Environment: ${process.env.NODE_ENV || 'development'}`);
   console.log(`📊 Health check: http://localhost:${PORT}/api/health`);
   console.log(`🚀 API Base URL: http://localhost:${PORT}/api`);
-  console.log(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'https://artplazza.netlify.app'}`);
+  console.log(`🔗 Frontend URL: ${process.env.FRONTEND_URL || 'https://jewellers.netlify.app/'}`);
   console.log(`✅ Allowed CORS origins:`, allowedOrigins);
   
   // Start keep-alive function after server starts
